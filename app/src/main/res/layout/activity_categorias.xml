@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".Categorias">
+
+    <Button
+        android:id="@+id/btConsumo1"
+        android:text="@string/consumo"
+        style="@style/boton_app"
+        android:layout_below="@id/txApp"
+        android:layout_marginTop="100dp" />
+
+    <TextView
+        android:id="@+id/txApp"
+        style="@style/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="@string/inicio" />
+
+    <Button
+        android:id="@+id/btConsejo1"
+        android:text="@string/consejo"
+        style="@style/boton_app"
+        android:layout_below="@+id/btConsumo1" />
+
+    <Button
+        android:id="@+id/btSeguimiento1"
+        android:text="@string/seguimiento"
+        style="@style/boton_app"
+        android:layout_below="@+id/btConsejo1" />
+
+    <Button
+        android:id="@+id/btInformacion1"
+        android:text="@string/informacion"
+        style="@style/boton_app"
+        android:layout_below="@+id/btSeguimiento1" />
+
+    <Button
+        android:id="@+id/btConfiguracion1"
+        android:text="@string/configuracion"
+        style="@style/boton_app"
+        android:layout_below="@+id/btInformacion1" />
+
+</RelativeLayout>

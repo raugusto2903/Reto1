@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:padding="16dp"
-    tools:context=".MainActivity">
+    tools:context=".Recicla">
 
     <TextView
         android:layout_width="match_parent"
@@ -64,6 +64,5 @@
         android:background="#00FAFAFB"
         android:text="Olvido su contraseña"
         android:textColor="#B6B1BD" />
-
 
 </LinearLayout>
