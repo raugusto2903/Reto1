@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo"
+    android:background="@drawable/fondo2"
     tools:context=".Principal">
 
     <Button
@@ -12,7 +12,8 @@
         android:text="@string/consumo"
         style="@style/boton_app"
         android:layout_below="@id/txApp"
-        android:layout_marginTop="100dp" />
+        android:layout_marginTop="100dp"
+        android:background="#3647C7"/>
 
     <TextView
         android:id="@+id/txApp"
@@ -27,24 +28,28 @@
         android:id="@+id/btConsejo1"
         android:text="@string/consejo"
         style="@style/boton_app"
-        android:layout_below="@+id/btConsumo1" />
+        android:layout_below="@+id/btConsumo1"
+        android:background="#3647C7"/>
 
     <Button
         android:id="@+id/btSeguimiento1"
         android:text="@string/seguimiento"
         style="@style/boton_app"
-        android:layout_below="@+id/btConsejo1" />
+        android:layout_below="@+id/btConsejo1"
+        android:background="#3647C7"/>
 
     <Button
         android:id="@+id/btInformacion1"
         android:text="@string/informacion"
         style="@style/boton_app"
-        android:layout_below="@+id/btSeguimiento1" />
+        android:layout_below="@+id/btSeguimiento1"
+        android:background="#3647C7"/>
 
     <Button
         android:id="@+id/btConfiguracion1"
         android:text="@string/configuracion"
         style="@style/boton_app"
-        android:layout_below="@+id/btInformacion1" />
+        android:layout_below="@+id/btInformacion1"
+        android:background="#3647C7"/>
 
 </RelativeLayout>
