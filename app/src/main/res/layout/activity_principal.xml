@@ -7,13 +7,25 @@
     android:background="@drawable/fondo2"
     tools:context=".Principal">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#3647C7"
+        android:text="EcoRecicl@"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+
     <Button
         android:id="@+id/btConsumo1"
-        android:text="@string/consumo"
+        android:text="Categorias"
         style="@style/boton_app"
         android:layout_below="@id/txApp"
         android:layout_marginTop="100dp"
-        android:background="#3647C7"/>
+        android:background="#3647C7"
+        android:padding="10dp"
+        android:onClick="gotoCategorias"/>
 
     <TextView
         android:id="@+id/txApp"
@@ -22,34 +34,24 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
-        android:text="@string/inicio" />
+        android:text="Cambiando el mundo" />
 
     <Button
         android:id="@+id/btConsejo1"
-        android:text="@string/consejo"
+        android:text="Consejos"
         style="@style/boton_app"
         android:layout_below="@+id/btConsumo1"
-        android:background="#3647C7"/>
+        android:background="#3647C7"
+        android:onClick="gotoConsejos"/>
 
     <Button
         android:id="@+id/btSeguimiento1"
-        android:text="@string/seguimiento"
+        android:text="Salir"
         style="@style/boton_app"
         android:layout_below="@+id/btConsejo1"
-        android:background="#3647C7"/>
+        android:background="#3647C7"
+        android:onClick="gotologin"/>
 
-    <Button
-        android:id="@+id/btInformacion1"
-        android:text="@string/informacion"
-        style="@style/boton_app"
-        android:layout_below="@+id/btSeguimiento1"
-        android:background="#3647C7"/>
 
-    <Button
-        android:id="@+id/btConfiguracion1"
-        android:text="@string/configuracion"
-        style="@style/boton_app"
-        android:layout_below="@+id/btInformacion1"
-        android:background="#3647C7"/>
 
 </RelativeLayout>

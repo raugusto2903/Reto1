@@ -7,21 +7,18 @@
     android:background="@drawable/fondo2"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="16dp"
     tools:context=".MainActivity">
 
 
-
     <TextView
+        android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:layout_marginBottom="40dp"
         android:background="#3647C7"
-        android:text="Login"
+        android:text="EcoRecicl@"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="60dp"
-        />
+        android:textSize="40sp" />
 
     <EditText
         android:id="@+id/etEmail"
@@ -47,7 +44,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="40dp"
-        android:background="#3647C7"
+        android:backgroundTint="#3647C7"
         android:text="Entrar"
         android:onClick="gotoPrincipal"
         android:textSize="40dp"/>
@@ -57,7 +54,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="40dp"
-        android:background="#3647C7"
+        android:backgroundTint="#3647C7"
         android:text="Registrarse"
         android:onClick="gotoRegistro"
         android:textSize="20dp"/>

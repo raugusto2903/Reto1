@@ -6,19 +6,26 @@
     android:layout_height="match_parent"
     android:background="@drawable/fondo2"
     android:orientation="vertical"
-    android:gravity="center"
-    android:padding="16dp"
     tools:context=".Recicla">
 
     <TextView
+        android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:layout_marginBottom="40dp"
-        android:background="#370B75"
-        android:text="LogIn"
+        android:background="#3647C7"
+        android:text="EcoRecicl@"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="60dp" />
+        android:textSize="40sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estadisticas"
+        android:textColor="#370B75"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
 
     <EditText
         android:id="@+id/etEmail"
@@ -26,9 +33,9 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:ems="10"
-        android:hint="eMail"
+        android:hint="Mes"
         android:inputType="textEmailAddress"
-        android:onClick="registrar" />
+         />
 
     <EditText
         android:id="@+id/etPassword"
@@ -36,7 +43,16 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:ems="10"
-        android:hint="Password"
+        android:hint="Cantidad"
+        android:inputType="textPassword" />
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:hint="Valor Acumulado"
         android:inputType="textPassword" />
 
     <Button
@@ -44,25 +60,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="40dp"
-        android:background="#370B75"
-        android:text="Entrar" />
+        android:backgroundTint="#3647C7"
+        android:text="Enviar" />
 
-    <Button
-        android:id="@+id/btRegistro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
 
-        android:layout_margin="40dp"
-        android:background="#370B75"
-        android:text="Registrarse" />
-
-    <Button
-        android:id="@+id/btPassw"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:background="#00FAFAFB"
-        android:text="Olvido su contraseña"
-        android:textColor="#B6B1BD" />
 
 </LinearLayout>
