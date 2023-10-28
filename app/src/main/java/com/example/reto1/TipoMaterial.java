@@ -4,15 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 public class TipoMaterial {
     private String nombreTipo;
-    public List<Double> listaMesesCantidad;
-    public List<Double> listaMesesValor;
+    public List<MesCantidadValor> listaMesesCantidad;
     private boolean activo;
 
     public TipoMaterial(String nombreTipo) {
         this.nombreTipo = nombreTipo;
         this.activo=false;
         listaMesesCantidad = new ArrayList<>();
-        listaMesesValor = new ArrayList<>();
     }
 
     public String getNombreTipo() {

@@ -35,24 +35,24 @@
         android:orientation="vertical">
 
         <RadioGroup
-            android:id="@+id/rgvivienda"
+            android:id="@+id/recicle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <RadioButton
-                android:id="@+id/rbCasa"
+                android:id="@+id/rbVidrio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Vidrio" />
             <RadioButton
-                android:id="@+id/rbApto"
+                android:id="@+id/rbPlastico"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Plastico" />
             <RadioButton
-                android:id="@+id/rbLote"
+                android:id="@+id/rbPapel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -72,23 +72,27 @@
 
 
 
-            <TextView
+            <EditText
                 android:id="@+id/tvMes"
                 android:layout_width="150dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="20dp"
                 android:background="#FFFFFF"
-                android:hint="Mes"/>
+                android:hint="Mes"
+                android:inputType="text"
+                android:visibility="visible"/>
 
-            <TextView
+            <EditText
                 android:id="@+id/tvCantidad"
                 android:layout_width="150dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="20dp"
                 android:background="#FFFFFF"
-                android:hint="Cantidad"/>
+                android:hint="Cantidad en kg"
+                android:inputType="text"
+                android:visibility="visible"/>
 
         </LinearLayout>
 
@@ -101,7 +105,7 @@
 
 
 
-            <TextView
+            <EditText
                 android:id="@+id/tvValor"
                 android:layout_width="150dp"
                 android:layout_height="40dp"
@@ -109,16 +113,19 @@
                 android:layout_marginTop="5dp"
                 android:background="#FFFFFF"
                 android:hint="Valor"
+                android:inputType="text"
+                android:visibility="visible"
                 />
 
             <Button
-                android:id="@+id/Enviar"
+                android:id="@+id/btEnviar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="20dp"
-                android:onClick="Prom"
-                android:text="Enviar" />
+                android:onClick="onClick"
+                android:text="Enviar"
+                />
 
         </LinearLayout>
 
@@ -130,160 +137,58 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="#EEEEEE">
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Numero"
-            android:padding="8dp" />
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Mes"
-            android:padding="8dp" />
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Cantidad"
-            android:padding="8dp" />
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Valor"
-            android:padding="8dp" />
-    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <!-- Fila 1 -->
-        <LinearLayout
+
+        <TableLayout
+            android:id="@+id/tableProducts"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="P1"
-                android:padding="8dp" />
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="P1"
-                android:padding="8dp" />
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Bota"
-                android:padding="8dp" />
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="50.000"
-                android:padding="8dp" />
-        </LinearLayout>
-        <!-- Fila 2 -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="P2"
-                android:padding="8dp" />
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="P2"
-                android:padding="8dp" />
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Mocasin"
-                android:padding="8dp" />
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="40.000"
-                android:padding="8dp" />
-        </LinearLayout>
-        <!-- Agrega más filas de datos aquí -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="P2"
-                android:padding="8dp" />
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="P2"
-                android:padding="8dp" />
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Mocasin"
-                android:padding="8dp" />
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="40.000"
-                android:padding="8dp" />
-        </LinearLayout>
-        <!-- Agrega más filas de datos aquí -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="P2"
-                android:padding="8dp" />
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="P2"
-                android:padding="8dp" />
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Mocasin"
-                android:padding="8dp" />
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="40.000"
-                android:padding="8dp" />
-        </LinearLayout>
+            android:layout_height="150dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvTableNombre"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mes"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+
+
+                <TextView
+                    android:id="@+id/tvTablePrecio"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Precio"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvTableCantidad"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:text="Cantidad"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvTableValor"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:text="Total"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+            </TableRow>
+
+        </TableLayout>
     </LinearLayout>
 
 
@@ -300,20 +205,20 @@
     android:orientation="horizontal">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnpromedio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="20dp"
-        android:onClick="Prom"
+        android:layout_marginTop="10dp"
+        android:onClick="promedio"
         android:text="Promediar" />
 
     <TextView
         android:id="@+id/tvPromedio"
-        android:layout_width="200dp"
+        android:layout_width="150dp"
         android:layout_height="40dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:background="#FFFFFF"/>
 
 </LinearLayout>
@@ -329,16 +234,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
-            android:layout_marginTop="30dp"
-            android:onClick="Men"
+            android:layout_marginTop="20dp"
+            android:onClick="buscarMenor"
             android:text="Menor" />
 
         <TextView
-
-            android:layout_width="200dp"
+            android:id="@+id/tvMenor"
+            android:layout_width="150dp"
             android:layout_height="40dp"
             android:layout_marginStart="55dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:background="#FFFFFF"
             />
 
@@ -355,13 +260,13 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
             android:layout_marginTop="20dp"
-            android:onClick="Mayor"
+            android:onClick="buscarMayor"
             android:text="Mayor"
             android:visibility="visible"/>
 
         <TextView
             android:id="@+id/tvMayor"
-            android:layout_width="200dp"
+            android:layout_width="150dp"
             android:layout_height="40dp"
             android:layout_marginStart="55dp"
             android:layout_marginTop="20dp"
@@ -371,7 +276,20 @@
     </LinearLayout>
 
 
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:onClick="gotoCategorias"
+        android:text="volver"
+        android:visibility="visible"/>
+</LinearLayout>
 
 
 </LinearLayout>
